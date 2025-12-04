@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mini_strava_db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "haslo123"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./db-init:/db-init                  
+    restart: always
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mini_strava_api
+    depends_on:
+      - db
+    environment:
+      # Connection string przekazany jako zmienna środowiskowa
+      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=haslo123;"
+    ports:
+      - "8080:8080"
+    restart: on-failure
