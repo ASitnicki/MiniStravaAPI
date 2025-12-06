@@ -6,7 +6,7 @@ services:
     container_name: mini_strava_db
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "haslo123"
+      SA_PASSWORD: "Haslo!12345678"
     ports:
       - "1433:1433"
     volumes:
@@ -22,7 +22,7 @@ services:
       - db
     environment:
       # Connection string przekazany jako zmienna środowiskowa
-      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=haslo123;"
+      ConnectionStrings__DefaultConnection: "Server=db,1433;Database=MiniStrava;User Id=sa;Password=Haslo!12345678;Trusted_Connection=False;Encrypt=False;"
     ports:
       - "8080:8080"
     restart: on-failure

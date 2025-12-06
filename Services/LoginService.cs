@@ -11,6 +11,7 @@ namespace MiniStrava.Services
     {
         public RegisterResponse Register(RegisterRequests request);
         public LoginResponse Login(LoginRequest request);
+        public User? Test();
     }
     public class LoginService : ILoginService
     {
@@ -102,9 +103,9 @@ namespace MiniStrava.Services
             string salt = PasswordTools.GenerateSalt();
             _userRepository.Add(new User 
             { 
-                Login = request.Login, 
-                HashPassword = PasswordTools.GenerateHash(request.Password, salt),
-                Salt = salt
+                Email = request.Login, 
+                //PasswordHash = PasswordTools.GenerateHash(request.Password, salt),
+                //PasswordSalt = salt
             });
             return new RegisterResponse
             {
@@ -123,17 +124,22 @@ namespace MiniStrava.Services
                 };
             }
             User? user = _userRepository.GetByLogin(request.Login);
-            if (user == null || PasswordTools.VerifyPassword(request.Password, user.Salt, user.HashPassword))
-            {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Message = "Invalid credentials."
-                };
-            }
+            //if (user == null || PasswordTools.VerifyPassword(request.Password, user.PasswordSalt, user.PasswordHash))
+            //{
+            //    return new LoginResponse
+            //    {
+            //        Success = false,
+            //        Message = "Invalid credentials."
+            //    };
+            //}
             //TODO:
             //
             //Wygenerować JWT
+            return null;
+        }
+        public User? Test()
+        {
+            return _userRepository.Test();
         }
     }
 }

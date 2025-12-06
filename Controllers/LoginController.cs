@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using MiniStrava.Models.Requests;
 using MiniStrava.Models.Responses;
 using MiniStrava.Services;
@@ -6,7 +7,7 @@ using MiniStrava.Services;
 namespace MiniStrava.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api")]
     public class LoginController : ControllerBase
     {
         private readonly ILoginService _loginService;
@@ -25,6 +26,11 @@ namespace MiniStrava.Controllers
             }
 
             return Ok(response);
+        }
+        [HttpGet("Test")]
+        public IActionResult Test()
+        {
+            return Ok(_loginService.Test());
         }
     }
 }
