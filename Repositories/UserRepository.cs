@@ -6,24 +6,27 @@ namespace MiniStrava.Repositories
     {
         public User? GetByLogin(string login);
         public void Add(User user);
+        public User? Test();
     }
     public class UserRepository : IUserRepository
     {
-        private static readonly List<User> _users = new List<User>();
+        private readonly AppDbContext _context;
+        public UserRepository(AppDbContext context)
+        {
+            _context = context;
+        }
         public User? GetByLogin(string login)
         {
-            foreach (User user in _users) 
-            {
-                if (user.Login == login)
-                {
-                    return user;
-                }
-            }
-            return null;
+            User user = _context.Users.First(user => user.Email == login);
+            return user;
         }
         public void Add(User user)
         {
-            _users.Add(user);
+            _context.Users.Add(user);
+        }
+        public User? Test()
+        {
+            return _context.Users.FirstOrDefault();
         }
     }
 }
