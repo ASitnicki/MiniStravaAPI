@@ -10,7 +10,8 @@ services:
     ports:
       - "1433:1433"
     volumes:
-      - ./db-init:/db-init                  
+      - sqlserverdata:/var/opt/mssql
+      - ./db-init:/db-init
     restart: always
 
   api:
@@ -21,8 +22,10 @@ services:
     depends_on:
       - db
     environment:
-      # Connection string przekazany jako zmienna środowiskowa
-      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=Haslo!12345678;Trusted_Connection=False;Encrypt=False;"
+      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=Haslo!12345678;Trusted_Connection=False;Encrypt=False;TrustServerCertificate=True;"
     ports:
       - "5000:8080"
     restart: on-failure
+
+volumes:
+  sqlserverdata:
