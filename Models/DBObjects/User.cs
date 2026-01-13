@@ -2,9 +2,20 @@
 {
     public class User
     {
-        public int Id { get; set; }
-        public string Login { get; set; }
-        public string HashPassword { get; set; }
-        public string Salt { get; set; }
+        public Guid Id { get; set; }
+        public string Email { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Gender { get; set; }
+        public int HeightCm { get; set; }
+        public decimal WeightKg { get; set; }
+        public string AvatarUrl { get; set; }
+        public bool IsAdmin { get; set; }
+        public string PreferredLanguage { get; set; }
+        public DateTimeOffset? CreatedAt { get; set; }
+        public DateTimeOffset? LastLoginAt { get; set; }
     }
 }
