@@ -16,14 +16,14 @@ namespace MiniStrava.Utils
             {
                 random.GetBytes(salt);
             }
-           return Convert.ToBase64String(salt);
+            return Convert.ToBase64String(salt);
         }
         public static string GenerateHash(string password, string salt)
         {
             byte[] hash;
             byte[] pass = Encoding.UTF8.GetBytes(password);
             byte[] sa = Encoding.UTF8.GetBytes(salt);
-            using (Rfc2898DeriveBytes hasher =  new Rfc2898DeriveBytes(pass, sa, iterations, HashAlgorithmName.SHA256))
+            using (Rfc2898DeriveBytes hasher = new Rfc2898DeriveBytes(pass, sa, iterations, HashAlgorithmName.SHA256))
             {
                 hash = hasher.GetBytes(hashSize);
             }
@@ -32,7 +32,7 @@ namespace MiniStrava.Utils
         public static bool VerifyPassword(string password, string salt, string hashPassword)
         {
             string hash = GenerateHash(password, salt);
-            return hash == hashPassword;
+            return hash.Equals(hashPassword);
         }
     }
 }

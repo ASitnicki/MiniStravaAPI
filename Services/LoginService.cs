@@ -3,6 +3,7 @@ using MiniStrava.Models.Requests;
 using MiniStrava.Models.Responses;
 using MiniStrava.Repositories;
 using MiniStrava.Utils;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace MiniStrava.Services
@@ -11,42 +12,39 @@ namespace MiniStrava.Services
     {
         public RegisterResponse Register(RegisterRequests request);
         public LoginResponse Login(LoginRequest request);
+        public List<User> GetUsers();
     }
     public class LoginService : ILoginService
     {
         private readonly IUserRepository _userRepository;
-        public LoginService(IUserRepository userRepository)
+        private readonly IJwtService _jwtService;
+        public LoginService(IUserRepository userRepository, IJwtService jwtService)
         {
             _userRepository = userRepository;
+            _jwtService = jwtService;
         }
         public RegisterResponse Register(RegisterRequests request)
         {
-            if (string.IsNullOrWhiteSpace(request.Login) || string.IsNullOrWhiteSpace(request.Password))
+            Console.WriteLine("krok1");
+            if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
             {
                 return new RegisterResponse
                 {
                     Success = false,
-                    Message = "Login or password cannot be empty."
+                    Message = "Email or password cannot be empty."
                 };
             }
-            if (request.Login.Length < 7)
+            Console.WriteLine("krok2");
+            string EmailPattern = "^\\S+@\\S+\\.\\S+$";
+            if (!Regex.IsMatch(request.Email, EmailPattern))
             {
                 return new RegisterResponse
                 {
                     Success = false,
-                    Message = "Login is too short."
+                    Message = "Email is invalid."
                 };
             }
-            string loginPattern = "^[a-zA-Z0-9]+$";
-            if (!Regex.IsMatch(request.Login, loginPattern))
-            {
-                return new RegisterResponse
-                {
-                    Success = false,
-                    Message = "Login contains restricted characters."
-                };
-            }
-            if (request.Password.Length < 7) 
+            if (request.Password.Length < 7)
             {
                 return new RegisterResponse
                 {
@@ -54,8 +52,8 @@ namespace MiniStrava.Services
                     Message = "Password is too short."
                 };
             }
-            string passwordPattern1 = "^(?=.?[A-Z])$";
-            if (!Regex.IsMatch(request.Password, passwordPattern1))
+            string passwordPatternUpperChar = "^(?=.*[A-Z]).+$";
+            if (!Regex.IsMatch(request.Password, passwordPatternUpperChar))
             {
                 return new RegisterResponse
                 {
@@ -63,8 +61,8 @@ namespace MiniStrava.Services
                     Message = "Password must contain at least one upper character."
                 };
             }
-            string passwordPattern2 = "^(?=.?[a-z])$";
-            if (!Regex.IsMatch(request.Password, passwordPattern2))
+            string passwordPatternLowerChar = "^(?=.*[a-z]).*$";
+            if (!Regex.IsMatch(request.Password, passwordPatternLowerChar))
             {
                 return new RegisterResponse
                 {
@@ -72,8 +70,8 @@ namespace MiniStrava.Services
                     Message = "Password must contain at least one lower character."
                 };
             }
-            string passwordPattern3 = "^(?=.?[0-9])$";
-            if (!Regex.IsMatch(request.Password, passwordPattern3))
+            string passwordPatternOneDigit = "^(?=.*\\d).+$";
+            if (!Regex.IsMatch(request.Password, passwordPatternOneDigit))
             {
                 return new RegisterResponse
                 {
@@ -81,8 +79,9 @@ namespace MiniStrava.Services
                     Message = "Password must contain at least one digit."
                 };
             }
-            string passwordPattern4 = "^(?=.?[#?!@$%^&*-])$";
-            if (!Regex.IsMatch(request.Password, passwordPattern4))
+            //string passwordPatternSpecialChar = "^(?=.?[#?!@$%^&*-])$";
+            string passwordPatternSpecialChar = "^(?=.*[^A-Za-z0-9]).+$";
+            if (!Regex.IsMatch(request.Password, passwordPatternSpecialChar))
             {
                 return new RegisterResponse
                 {
@@ -90,22 +89,35 @@ namespace MiniStrava.Services
                     Message = "Password must contain at least one special character (#?!@$%^&*-)."
                 };
             }
-            User? user = _userRepository.GetByLogin(request.Login);
-            if (user != null) 
+            Console.WriteLine("krok3");
+            User? user = _userRepository.GetByEmail(request.Email);
+            if (user != null)
             {
                 return new RegisterResponse
                 {
                     Success = false,
-                    Message = "Login is already taken."
+                    Message = "Email is already taken."
                 };
             }
+            Console.WriteLine("krok4");
             string salt = PasswordTools.GenerateSalt();
-            _userRepository.Add(new User 
-            { 
-                Login = request.Login, 
-                HashPassword = PasswordTools.GenerateHash(request.Password, salt),
-                Salt = salt
+            _userRepository.Add(new User
+            {
+                Email = request.Email,
+                PasswordHash = Encoding.UTF8.GetBytes(PasswordTools.GenerateHash(request.Password, salt)),
+                PasswordSalt = Encoding.UTF8.GetBytes(salt),
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                BirthDate = request.BirthDate,
+                Gender = request.Gender,
+                HeightCm = request.HeightCm,
+                WeightKg = (decimal)request.WeightKg,
+                AvatarUrl = request.AvatarUrl,
+                IsAdmin = false,
+                PreferredLanguage = request.PreferredLanguage,
+                CreatedAt = DateTimeOffset.Now,
             });
+            Console.WriteLine("krok5");
             return new RegisterResponse
             {
                 Success = true,
@@ -122,8 +134,8 @@ namespace MiniStrava.Services
                     Message = "Login and password are required."
                 };
             }
-            User? user = _userRepository.GetByLogin(request.Login);
-            if (user == null || PasswordTools.VerifyPassword(request.Password, user.Salt, user.HashPassword))
+            User? user = _userRepository.GetByEmail(request.Login);
+            if (user == null || !PasswordTools.VerifyPassword(request.Password, Encoding.UTF8.GetString(user.PasswordSalt), Encoding.UTF8.GetString(user.PasswordHash)))
             {
                 return new LoginResponse
                 {
@@ -131,9 +143,17 @@ namespace MiniStrava.Services
                     Message = "Invalid credentials."
                 };
             }
-            //TODO:
-            //
-            //Wygenerować JWT
+            string jwtToken = _jwtService.GenerateToken(request.Login);
+            return new LoginResponse
+            {
+                Success = true,
+                Message = "",
+                JWTToken = jwtToken
+            };
+        }
+        public List<User> GetUsers()
+        {
+            return _userRepository.GetAll();
         }
     }
 }
