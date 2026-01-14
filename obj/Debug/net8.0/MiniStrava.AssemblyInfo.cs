@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniStrava")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11b076db727d26cbc8742b493a530b0a32a76cb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+635cc9c31f6daabeb4d967a31305855557214a3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniStrava")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniStrava")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
