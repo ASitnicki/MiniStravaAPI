@@ -2,6 +2,10 @@
 
 - uruchamianie dockera: docker-compose up --build
 
+## Aktualny adres
+
+- https://align-presented-hosted-bids.trycloudflare.com/
+
 ## Endpointy API
 
 ### Auth / konto
