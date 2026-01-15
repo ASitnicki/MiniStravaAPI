@@ -1,20 +1,49 @@
 # MiniStravaAPI
 
-uruchamianie dockera: docker-compose up --build
+- uruchamianie dockera: docker-compose up --build
 
-# Dostêpne endpointy API:
+## Endpointy API
 
-- POST /api/register — Rejestracja u¿ytkownika (body: RegisterRequest)
-- POST /api/login — Logowanie u¿ytkownika, zwraca JWT (body: LoginRequest, response: LoginResponse)
-- GET /api/test1 — Endpoint testowy, zwraca listê u¿ytkowników (wymaga JWT)
-- GET /api/test2 — Endpoint testowy, zwraca listê u¿ytkowników (bez autoryzacji)
-- GET /WeatherForecast — Przyk³adowy endpoint z template ASP.NET (demo)
-- GET /api/activities — Lista aktywnoœci zalogowanego u¿ytkownika (JWT wymagany)
-- GET /api/activities/{id}?includeTrackPoints={true|false} — Szczegó³y aktywnoœci (opcjonalnie z trackpointami) (JWT wymagany)
-- POST /api/activities — Utworzenie aktywnoœci (JWT wymagany, body: CreateActivityRequest)
-- PUT /api/activities/{id} — Aktualizacja aktywnoœci (JWT wymagany, body: UpdateActivityRequest)
-- DELETE /api/activities/{id} — Usuniêcie aktywnoœci (JWT wymagany)
-- POST /api/activities/{id}/trackpoints — Dodanie paczki punktów GPS do aktywnoœci (bez duplikatów po Sequence) (JWT wymagany, body: AddTrackPointsRequest)
-- GET /api/sync — Lista sesji synchronizacji u¿ytkownika (JWT wymagany)
-- POST /api/sync/start — Start sesji synchronizacji (JWT wymagany)
-- POST /api/sync/{sessionId}/finish — Zakoñczenie sesji synchronizacji (JWT wymagany, body: FinishSyncSessionRequest)
+### Auth / konto
+- **POST** `/api/register` â€“ rejestracja
+- **POST** `/api/login` â€“ logowanie (JWT)
+- **POST** `/api/change-password` â€“ zmiana hasÅ‚a (wymaga JWT)
+
+### Reset hasÅ‚a
+- **POST** `/api/password/forgot` â€“ generuje token resetu (DEV: moÅ¼e zwracaÄ‡ token)
+- **POST** `/api/password/reset` â€“ resetuje hasÅ‚o tokenem
+
+### Profil
+- **GET** `/api/me` â€“ pobierz profil (JWT)
+- **PUT** `/api/me` â€“ zaktualizuj profil (JWT)
+
+### AktywnoÅ›ci
+- **GET** `/api/activities` â€“ lista Twoich aktywnoÅ›ci (JWT, z query do filtrÃ³w/sortu jeÅ›li wdroÅ¼one)
+- **POST** `/api/activities` â€“ utwÃ³rz aktywnoÅ›Ä‡ (JWT)
+- **GET** `/api/activities/{id:guid}` â€“ szczegÃ³Å‚y aktywnoÅ›ci (JWT)
+- **PUT** `/api/activities/{id:guid}` â€“ edycja (JWT)
+- **DELETE** `/api/activities/{id:guid}` â€“ usuÅ„ (JWT)
+- **POST** `/api/activities/{id:guid}/trackpoints` â€“ dodaj trackpointy (JWT)
+- **GET** `/api/activities/{id:guid}/export/gpx` â€“ eksport GPX (JWT)
+
+### Statystyki / ranking
+- **GET** `/api/stats/me` â€“ statystyki uÅ¼ytkownika (JWT)
+- **GET** `/api/rankings/weekly` â€“ ranking tygodniowy (JWT)
+
+### Admin (wymaga JWT + rola Admin)
+- **GET** `/api/admin/users` â€“ lista uÅ¼ytkownikÃ³w
+- **GET** `/api/admin/activities` â€“ lista aktywnoÅ›ci (filtry)
+- **DELETE** `/api/admin/activities/{id:guid}` â€“ usuÅ„ aktywnoÅ›Ä‡
+- **GET** `/api/admin/stats` â€“ statystyki globalne
+
+### Synchronizacja (jeÅ›li uÅ¼ywana w appce)
+- **GET** `/api/sync` â€“ lista sesji sync (JWT)
+- **POST** `/api/sync/start` â€“ start sesji sync (JWT)
+- **POST** `/api/sync/{sessionId:guid}/finish` â€“ zakoÅ„cz sesjÄ™ sync (JWT)
+
+### Swagger / OpenAPI
+- Swagger UI: **GET** `/api/documentation`
+- JSON spec: **GET** `/api/documentation/v1/swagger.json`
+
+##Dokumentacja Open API
+- [dokumentacja](./openapi.json)
