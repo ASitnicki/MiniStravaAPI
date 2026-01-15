@@ -13,15 +13,19 @@ namespace MiniStrava.Services
         public RegisterResponse Register(RegisterRequests request);
         public LoginResponse Login(LoginRequest request);
         public List<User> GetUsers();
+        public RegisterResponse ChangePassword(ChangePasswordRequest request);
     }
     public class LoginService : ILoginService
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtService _jwtService;
-        public LoginService(IUserRepository userRepository, IJwtService jwtService)
+        private readonly IHttpContextAccessor _http;
+
+        public LoginService(IUserRepository userRepository, IJwtService jwtService, IHttpContextAccessor http)
         {
             _userRepository = userRepository;
             _jwtService = jwtService;
+            _http = http;
         }
         public RegisterResponse Register(RegisterRequests request)
         {
@@ -124,6 +128,56 @@ namespace MiniStrava.Services
                 Message = ""
             };
         }
+
+        public RegisterResponse ChangePassword(ChangePasswordRequest request)
+        {
+            if (string.IsNullOrWhiteSpace(request.CurrentPassword) || string.IsNullOrWhiteSpace(request.NewPassword))
+            {
+                return new RegisterResponse { Success = false, Message = "CurrentPassword and NewPassword are required." };
+            }
+
+            var email = _http.HttpContext?.User?.Identity?.Name;
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                return new RegisterResponse { Success = false, Message = "Unauthorized." };
+            }
+
+            var user = _userRepository.GetByEmail(email);
+            if (user == null)
+            {
+                return new RegisterResponse { Success = false, Message = "User not found." };
+            }
+
+            var saltStr = Encoding.UTF8.GetString(user.PasswordSalt);
+            var hashStr = Encoding.UTF8.GetString(user.PasswordHash);
+
+            if (!PasswordTools.VerifyPassword(request.CurrentPassword, saltStr, hashStr))
+            {
+                return new RegisterResponse { Success = false, Message = "Current password is incorrect." };
+            }
+
+            //string passwordPatternSpecialChar = "^(?=.?[#?!@$%^&*-])$";
+            string passwordPatternSpecialChar = "^(?=.*[^A-Za-z0-9]).+$";
+            if (!Regex.IsMatch(request.NewPassword, passwordPatternSpecialChar))
+            {
+                return new RegisterResponse
+                {
+                    Success = false,
+                    Message = "Password must contain at least one special character (#?!@$%^&*-)."
+                };
+            }
+
+            var newSalt = PasswordTools.GenerateSalt();
+            user.PasswordSalt = Encoding.UTF8.GetBytes(newSalt);
+            user.PasswordHash = Encoding.UTF8.GetBytes(PasswordTools.GenerateHash(request.NewPassword, newSalt));
+
+            user.MustChangePassword = false; // <-- najważniejsze dla “pierwszego logowania”
+
+            
+            _userRepository.Update(user);
+
+            return new RegisterResponse { Success = true, Message = "" };
+        }
         public LoginResponse Login(LoginRequest request)
         {
             if (string.IsNullOrWhiteSpace(request.Login) || string.IsNullOrWhiteSpace(request.Password))
@@ -143,13 +197,16 @@ namespace MiniStrava.Services
                     Message = "Invalid credentials."
                 };
             }
-            string jwtToken = _jwtService.GenerateToken(request.Login);
+            string jwtToken = _jwtService.GenerateToken(request.Login, user.IsAdmin);
             return new LoginResponse
             {
                 Success = true,
                 Message = "",
-                JWTToken = jwtToken
+                JWTToken = jwtToken,
+                MustChangePassword = user.MustChangePassword
             };
+
+
         }
         public List<User> GetUsers()
         {

@@ -7,6 +7,7 @@ namespace MiniStrava.Repositories
     {
         public User? GetByEmail(string email);
         public void Add(User user);
+        void Update(User user);
         public List<User> GetAll();
     }
     public class UserRepository : IUserRepository
@@ -24,6 +25,11 @@ namespace MiniStrava.Repositories
         public void Add(User user)
         {
             _context.Users.Add(user);
+            _context.SaveChanges();
+        }
+        public void Update(User user)
+        {
+            _context.Users.Update(user);
             _context.SaveChanges();
         }
         public List<User> GetAll()

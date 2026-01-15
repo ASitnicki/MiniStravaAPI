@@ -35,7 +35,25 @@ BEGIN
     );
 END;
 
--- Unikalność Email (lepiej jako index/constraint sprawdzany warunkowo)
+IF COL_LENGTH('Users', 'MustChangePassword') IS NULL
+BEGIN
+    ALTER TABLE [Users]
+    ADD [MustChangePassword] BIT NOT NULL
+        CONSTRAINT DF_Users_MustChangePassword DEFAULT 0;
+END
+IF COL_LENGTH('Users', 'PasswordResetToken') IS NULL
+BEGIN
+    ALTER TABLE [Users]
+    ADD [PasswordResetToken] NVARCHAR(200) NULL;
+END
+
+IF COL_LENGTH('Users', 'PasswordResetTokenExpiresAt') IS NULL
+BEGIN
+    ALTER TABLE [Users]
+    ADD [PasswordResetTokenExpiresAt] DATETIMEOFFSET NULL;
+END
+
+-- Unikalność Email
 IF NOT EXISTS (
     SELECT 1
     FROM sys.indexes
@@ -69,7 +87,6 @@ BEGIN
 
         [DurationSeconds] INT NULL,
 
-        -- Uwaga: u Ciebie było DEFAULT 0, ale bez NOT NULL (czyli mogło być NULL).
         [DistanceMeters] DECIMAL(10,2) NOT NULL
             CONSTRAINT [DF_Activities_DistanceMeters] DEFAULT 0,
 
@@ -154,8 +171,6 @@ BEGIN
         ON DELETE CASCADE;
 END;
 
--- Kluczowa rzecz: uniknij duplikatów Sequence w ramach Activity (sync paczkami)
--- Jeśli wolisz bez restrykcji - zmień UNIQUE na zwykły INDEX.
 IF NOT EXISTS (
     SELECT 1 FROM sys.indexes
     WHERE name = N'UX_TrackPoints_ActivityId_Sequence'
@@ -228,7 +243,7 @@ BEGIN
     );
 END;
 
--- DODANE: FK ApiClients -> Users (UserId opcjonalny, więc SET NULL)
+-- FK ApiClients -> Users (UserId opcjonalny, więc SET NULL)
 IF NOT EXISTS (
     SELECT 1 FROM sys.foreign_keys
     WHERE name = N'FK_ApiClients_Users'

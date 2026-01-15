@@ -7,7 +7,7 @@ namespace MiniStrava.Services
 {
     public interface IJwtService
     {
-        public string GenerateToken(string login);
+        public string GenerateToken(string login, bool isAdmin);
     }
     public class JwtService : IJwtService
     {
@@ -17,14 +17,17 @@ namespace MiniStrava.Services
         {
             _config = config;
         }
-        public string GenerateToken(string username)
+        public string GenerateToken(string username, bool isAdmin)
         {
-            var claims = new[]
+            var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.Name, username)
             };
+
+            if (isAdmin)
+                claims.Add(new Claim(ClaimTypes.Role, "Admin"));
 
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(_config["Jwt:Key"]));

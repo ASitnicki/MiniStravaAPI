@@ -50,5 +50,16 @@ namespace MiniStrava.Controllers
 
             return Ok(response);
         }
+
+        [Authorize]
+        [HttpPost("change-password")]
+        public IActionResult ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            var response = _loginService.ChangePassword(request);
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
+        }
     }
 }

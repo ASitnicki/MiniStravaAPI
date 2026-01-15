@@ -3,8 +3,156 @@
   "WorkspaceRootPath": "E:\\github\\MiniStravaAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\utils\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:utils\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\passwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\passwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\dbobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\dbobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\adminuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\adminuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\forgotpasswordresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\forgotpasswordresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\adminstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\adminstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\adminactivityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\adminactivityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\rankingentryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\rankingentryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\userstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\userstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\mecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\mecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\meresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\meresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\updateactivityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\updateactivityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\updatemerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\updatemerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\activityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\activityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\utils\\gpxbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:utils\\gpxbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\ministrava.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -13,26 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\utils\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +179,12 @@
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:utils\\apiexceptionmiddlware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\repositories\\syncsessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,20 +195,12 @@
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:repositories\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\syncsessionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\syncsessionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\finishsyncsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\finishsyncsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\updateactivityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\updateactivityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\requests\\startsyncsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,14 +223,6 @@
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\requests\\addtrackpointsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\responses\\activityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\responses\\activityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\dbobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\dbobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\models\\dbobjects\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\dbobjects\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -135,24 +239,12 @@
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:models\\dbobjects\\trackpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\utils\\passwordtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:utils\\passwordtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|e:\\github\\ministravaapi\\db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5D77ADCB-91A3-4233-913C-770355E4AE35}|MiniStrava.csproj|solutionrelative:db-init\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,7 +254,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,7 +286,289 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": ".env",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-15T00:15:08.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-15T00:09:09.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Requests\\ResetPasswordRequest.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "Models\\Requests\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:56:31.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordController.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\PasswordController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PasswordController.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\PasswordController.cs",
+              "RelativeToolTip": "Controllers\\PasswordController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:53:21.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ForgotPasswordResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\ForgotPasswordResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\ForgotPasswordResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\ForgotPasswordResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\ForgotPasswordResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:52:49.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ForgotPasswordRequest.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ForgotPasswordRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Requests\\ForgotPasswordRequest.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ForgotPasswordRequest.cs",
+              "RelativeToolTip": "Models\\Requests\\ForgotPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:52:28.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:51:57.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminStatsResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminStatsResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\AdminStatsResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminStatsResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\AdminStatsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:51:43.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminActivityResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminActivityResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\AdminActivityResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminActivityResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\AdminActivityResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:51:24.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminUserResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminUserResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\AdminUserResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\AdminUserResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\AdminUserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:51:06.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RankingController.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\RankingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RankingController.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\RankingController.cs",
+              "RelativeToolTip": "Controllers\\RankingController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:50:37.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RankingEntryResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\RankingEntryResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\RankingEntryResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\RankingEntryResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\RankingEntryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:50:21.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StatsController.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\StatsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StatsController.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\StatsController.cs",
+              "RelativeToolTip": "Controllers\\StatsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:49:49.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserStatsResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\UserStatsResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\UserStatsResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\UserStatsResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\UserStatsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:49:33.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MeController.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\MeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MeController.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\MeController.cs",
+              "RelativeToolTip": "Controllers\\MeController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:45:59.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MeResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\MeResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\MeResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\MeResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\MeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:45:40.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UpdateMeRequest.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\UpdateMeRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Requests\\UpdateMeRequest.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Requests\\UpdateMeRequest.cs",
+              "RelativeToolTip": "Models\\Requests\\UpdateMeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T23:45:11.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RegisterResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\RegisterResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\RegisterResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\RegisterResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\RegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:58:22.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Requests\\ChangePasswordRequest.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Requests\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "Models\\Requests\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:53:38.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Responses\\LoginResponse.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\Responses\\LoginResponse.cs",
+              "RelativeToolTip": "Models\\Responses\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:52:30.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Utils\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Utils\\DbSeeder.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Utils\\DbSeeder.cs",
+              "RelativeToolTip": "Utils\\DbSeeder.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:50:14.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GpxBuilder.cs",
+              "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Utils\\GpxBuilder.cs",
+              "RelativeDocumentMoniker": "Utils\\GpxBuilder.cs",
+              "ToolTip": "E:\\github\\MiniStravaAPI\\Utils\\GpxBuilder.cs",
+              "RelativeToolTip": "Utils\\GpxBuilder.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:46:59.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "MiniStrava.http",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\MiniStrava.http",
               "RelativeDocumentMoniker": "MiniStrava.http",
@@ -202,12 +576,11 @@
               "RelativeToolTip": "MiniStrava.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-01-14T12:00:51.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T12:00:51.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 39,
               "Title": "README.md",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -215,12 +588,11 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-01-13T20:02:17.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T20:02:17.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 43,
               "Title": "ApiExceptionMiddlware.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Utils\\ApiExceptionMiddlware.cs",
               "RelativeDocumentMoniker": "Utils\\ApiExceptionMiddlware.cs",
@@ -232,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 40,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Utils\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Utils\\DbInitializer.cs",
@@ -244,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "SyncController.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\SyncController.cs",
               "RelativeDocumentMoniker": "Controllers\\SyncController.cs",
@@ -252,23 +624,25 @@
               "RelativeToolTip": "Controllers\\SyncController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T18:03:26.231Z"
+              "WhenOpened": "2026-01-13T18:03:26.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "ActivitiesController.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\ActivitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivitiesController.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\ActivitiesController.cs",
               "RelativeToolTip": "Controllers\\ActivitiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T18:02:19.062Z"
+              "WhenOpened": "2026-01-13T18:02:19.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 45,
               "Title": "SyncService.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Services\\SyncService.cs",
               "RelativeDocumentMoniker": "Services\\SyncService.cs",
@@ -280,19 +654,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "ActivityService.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Services\\ActivityService.cs",
               "RelativeDocumentMoniker": "Services\\ActivityService.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Services\\ActivityService.cs",
               "RelativeToolTip": "Services\\ActivityService.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwD8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T17:54:11.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 44,
               "Title": "CurrentUserService.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Services\\CurrentUserService.cs",
               "RelativeDocumentMoniker": "Services\\CurrentUserService.cs",
@@ -304,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 46,
               "Title": "SyncSessionRepository.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Repositories\\SyncSessionRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\SyncSessionRepository.cs",
@@ -316,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 47,
               "Title": "ActivityRepository.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Repositories\\ActivityRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ActivityRepository.cs",
@@ -328,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 49,
               "Title": "FinishSyncSessionRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\FinishSyncSessionRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\FinishSyncSessionRequest.cs",
@@ -340,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 48,
               "Title": "SyncSessionResponse.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\SyncSessionResponse.cs",
               "RelativeDocumentMoniker": "Models\\Responses\\SyncSessionResponse.cs",
@@ -352,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ActivityResponse.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Responses\\ActivityResponse.cs",
               "RelativeDocumentMoniker": "Models\\Responses\\ActivityResponse.cs",
@@ -364,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 50,
               "Title": "StartSyncSessionRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\StartSyncSessionRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\StartSyncSessionRequest.cs",
@@ -376,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 54,
               "Title": "AddTrackPointsRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\AddTrackPointsRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\AddTrackPointsRequest.cs",
@@ -388,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "UpdateActivityRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\UpdateActivityRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\UpdateActivityRequest.cs",
@@ -396,11 +770,12 @@
               "RelativeToolTip": "Models\\Requests\\UpdateActivityRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T17:43:48.238Z"
+              "WhenOpened": "2026-01-13T17:43:48.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 53,
               "Title": "CreateActivityRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\CreateActivityRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\CreateActivityRequest.cs",
@@ -412,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 55,
               "Title": "ApiClient.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\ApiClient.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\ApiClient.cs",
@@ -424,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 56,
               "Title": "ActivityPhoto.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\ActivityPhoto.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\ActivityPhoto.cs",
@@ -436,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 57,
               "Title": "SyncSession.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\SyncSession.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\SyncSession.cs",
@@ -448,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 41,
               "Title": "Activity.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\Activity.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\Activity.cs",
@@ -460,18 +835,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "schema.sql",
+              "DocumentIndex": 5,
+              "Title": "schema.sql ",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\db-init\\schema.sql",
               "RelativeDocumentMoniker": "db-init\\schema.sql",
               "ToolTip": "E:\\github\\MiniStravaAPI\\db-init\\schema.sql",
               "RelativeToolTip": "db-init\\schema.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-01-13T16:17:19.826Z"
+              "WhenOpened": "2026-01-13T16:17:19.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 58,
               "Title": "TrackPoint.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\TrackPoint.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\TrackPoint.cs",
@@ -483,32 +859,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 6,
               "Title": "LoginService.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Services\\LoginService.cs",
               "RelativeToolTip": "Services\\LoginService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAMwBwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAcwMIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T13:42:11.483Z"
+              "WhenOpened": "2026-01-13T13:42:11.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAJEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T13:41:15.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T13:41:15.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -516,11 +892,12 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-13T13:39:44.286Z"
+              "WhenOpened": "2026-01-13T13:39:44.286Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 51,
               "Title": "RegisterRequests.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\RegisterRequests.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\RegisterRequests.cs",
@@ -532,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 52,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\Requests\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\LoginRequest.cs",
@@ -544,55 +921,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\User.cs",
               "RelativeDocumentMoniker": "Models\\DBObjects\\User.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Models\\DBObjects\\User.cs",
               "RelativeToolTip": "Models\\DBObjects\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T19:14:17.839Z"
+              "WhenOpened": "2026-01-12T19:14:17.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "E:\\github\\MiniStravaAPI\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-12T19:14:15.504Z"
+              "WhenOpened": "2026-01-12T19:14:15.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 26,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T18:45:21.974Z"
+              "WhenOpened": "2026-01-12T18:45:21.974Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowCAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T18:44:00.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 42,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AppDbContext.cs",
@@ -604,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Dockerfile",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -612,11 +992,12 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-12T19:14:13.02Z"
+              "WhenOpened": "2026-01-12T19:14:13.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 24,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -624,11 +1005,12 @@
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T13:44:28.35Z"
+              "WhenOpened": "2026-01-13T13:44:28.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 59,
               "Title": "PasswordTools.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Utils\\PasswordTools.cs",
               "RelativeDocumentMoniker": "Utils\\PasswordTools.cs",
@@ -640,15 +1022,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 12,
               "Title": "JwtService.cs",
               "DocumentMoniker": "E:\\github\\MiniStravaAPI\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
               "ToolTip": "E:\\github\\MiniStravaAPI\\Services\\JwtService.cs",
               "RelativeToolTip": "Services\\JwtService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T18:41:07.935Z"
+              "WhenOpened": "2026-01-12T18:41:07.935Z",
+              "EditorCaption": ""
             }
           ]
         }

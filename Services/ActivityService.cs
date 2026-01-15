@@ -2,6 +2,7 @@
 using MiniStrava.Models.Requests;
 using MiniStrava.Models.Responses;
 using MiniStrava.Repositories;
+using MiniStrava.Utils;
 using System.Linq;
 
 namespace MiniStrava.Services
@@ -16,6 +17,8 @@ namespace MiniStrava.Services
         Task DeleteAsync(Guid id);
 
         Task<int> AddTrackPointsAsync(Guid activityId, AddTrackPointsRequest req);
+
+        Task<(string fileName, byte[] bytes)> ExportGpxAsync(Guid activityId);
     }
 
     public class ActivityService : IActivityService
@@ -34,7 +37,6 @@ namespace MiniStrava.Services
             var userId = await _me.GetUserIdAsync();
             var items = await _repo.GetAllForUserAsync(userId);
 
-            // FIX: teraz MapActivity(Activity) pasuje do Func<Activity, ActivityResponse>
             return items.Select(MapActivity).ToList();
         }
 
@@ -45,6 +47,21 @@ namespace MiniStrava.Services
             if (a == null) throw new KeyNotFoundException("Activity not found.");
 
             return MapActivity(a, includeTrackPoints);
+        }
+
+        public async Task<(string fileName, byte[] bytes)> ExportGpxAsync(Guid activityId)
+        {
+            var userId = await _me.GetUserIdAsync();
+            var a = await _repo.GetByIdForUserAsync(userId, activityId, includeTrackPoints: true);
+            if (a == null) throw new KeyNotFoundException("Activity not found.");
+
+            var bytes = GpxBuilder.Build(a);
+
+            var safe = string.IsNullOrWhiteSpace(a.Name) ? "activity" : a.Name;
+            safe = string.Concat(safe.Select(ch => char.IsLetterOrDigit(ch) ? ch : '_'));
+            var fileName = $"{safe}_{a.StartTime:yyyyMMdd_HHmm}.gpx";
+
+            return (fileName, bytes);
         }
 
         public async Task<ActivityResponse> CreateAsync(CreateActivityRequest req)
@@ -137,7 +154,6 @@ namespace MiniStrava.Services
             return toInsert.Count;
         }
 
-        // ✅ DODANE: wersja jednoargumentowa (żeby działało items.Select(MapActivity))
         private static ActivityResponse MapActivity(Activity a)
             => MapActivity(a, includeTrackPoints: false);
 

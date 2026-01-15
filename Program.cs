@@ -139,5 +139,10 @@ app.MapControllers();
 // odpala db-init/schema.sql tylko jeœli brak tabeli Users
 // =======================
 await DbInitializer.InitializeAsync(app.Configuration, app.Logger);
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    await DbSeeder.SeedAsync(db, app.Configuration, app.Logger);
+}
 
 app.Run();
