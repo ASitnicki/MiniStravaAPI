@@ -45,5 +45,5 @@
 - Swagger UI: **GET** `/api/documentation`
 - JSON spec: **GET** `/api/documentation/v1/swagger.json`
 
-##Dokumentacja Open API
+## Dokumentacja Open API
 - [dokumentacja](./openapi.json)
