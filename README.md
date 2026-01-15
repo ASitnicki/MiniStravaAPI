@@ -4,7 +4,7 @@
 
 ## Aktualny adres
 
-- https://align-presented-hosted-bids.trycloudflare.com/
+- nieaktywne
 
 ## Endpointy API
 
