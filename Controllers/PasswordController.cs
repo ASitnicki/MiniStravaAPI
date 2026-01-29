@@ -48,6 +48,16 @@ namespace MiniStrava.Controllers
             });
         }
 
+        // =======================
+        // Mobile compatibility endpoint
+        // Mobile calls: POST /auth/reset-password  with body: { "email": "..." }
+        // Alias it to the existing Forgot() implementation.
+        // =======================
+        [HttpPost("~/auth/reset-password")]
+        [HttpPost("~/api/auth/reset-password")]
+        public Task<ActionResult<ForgotPasswordResponse>> ResetPasswordMobile([FromBody] ForgotPasswordRequest req)
+            => Forgot(req);
+
         [HttpPost("reset")]
         public async Task<ActionResult<RegisterResponse>> Reset([FromBody] ResetPasswordRequest req)
         {

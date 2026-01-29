@@ -20,6 +20,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Controllers + Swagger
 // =======================
 builder.Services.AddControllers();
+
+// =======================
+// CORS
+// =======================
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod());
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -58,7 +69,7 @@ builder.Services.AddSwaggerGen(c =>
 
 
 // =======================
-// DI - repozytoria/serwisy auth (Twoje istniej¹ce)
+// DI - repozytoria/serwisy auth
 // =======================
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
@@ -110,6 +121,11 @@ var app = builder.Build();
 app.UseApiExceptions();
 
 // =======================
+// CORS
+// =======================
+app.UseCors("AllowAll");
+
+// =======================
 // Swagger
 // UI: /api/documentation
 // JSON: /api/documentation/v1/swagger.json
@@ -135,7 +151,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 // =======================
-// Init DB (Docker-friendly) – czeka na SQL Server, tworzy DB,
+// Init DB (Docker-friendly)  czeka na SQL Server, tworzy DB,
 // odpala db-init/schema.sql tylko jeœli brak tabeli Users
 // =======================
 await DbInitializer.InitializeAsync(app.Configuration, app.Logger);
