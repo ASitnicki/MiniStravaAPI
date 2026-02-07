@@ -13,26 +13,6 @@ services:
       - sqlserverdata:/var/opt/mssql
     restart: always
 
-  db-init:
-    image: mcr.microsoft.com/mssql-tools
-    container_name: mini_strava_db_init
-    depends_on:
-      - db
-    volumes:
-      - ./db-init:/db-init:ro
-    entrypoint: >
-      /bin/bash -c "
-      echo 'Waiting for SQL Server...' &&
-      sleep 20 &&
-      /opt/mssql-tools/bin/sqlcmd
-        -S db
-        -U sa
-        -P '${SA_PASSWORD:-Haslo!12345678}'
-        -d master
-        -i /db-init/schema.sql
-      && echo 'DB initialized.'"
-    restart: "no"
-
   api:
     build:
       context: .
@@ -40,7 +20,6 @@ services:
     container_name: mini_strava_api
     depends_on:
       - db
-      - db-init
     environment:
       ASPNETCORE_URLS: "http://+:8080"
       ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=${SA_PASSWORD:-Haslo!12345678};Trusted_Connection=False;Encrypt=False;TrustServerCertificate=True;"

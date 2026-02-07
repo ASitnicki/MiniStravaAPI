@@ -61,7 +61,7 @@ namespace MiniStrava.Utils
 
             await db.SaveChangesAsync();
 
-            // aktywność testowa dla test1 (z trackpointami)
+            // testing activity for test1 (with trackpoints)
             var test1 = await db.Users.FirstOrDefaultAsync(u => u.Email == "test1@example.com");
             if (test1 != null && !await db.Activities.AnyAsync(a => a.UserId == test1.Id))
             {
@@ -95,7 +95,6 @@ namespace MiniStrava.Utils
 
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
-            // Spójne z LoginService/Register -> PasswordTools
             var saltStr = PasswordTools.GenerateSalt(); // Base64 string
             var hashStr = PasswordTools.GenerateHash(password, saltStr); // Base64 string
 

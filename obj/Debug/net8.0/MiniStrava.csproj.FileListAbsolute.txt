@@ -124,3 +124,4 @@ E:\github\MiniStravaAPI\obj\Debug\net8.0\refint\MiniStrava.dll
 E:\github\MiniStravaAPI\obj\Debug\net8.0\MiniStrava.pdb
 E:\github\MiniStravaAPI\obj\Debug\net8.0\MiniStrava.genruntimeconfig.cache
 E:\github\MiniStravaAPI\obj\Debug\net8.0\ref\MiniStrava.dll
+E:\github\MiniStravaAPI\bin\Debug\net8.0\openapi.json
