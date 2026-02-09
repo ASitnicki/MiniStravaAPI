@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "8ff0cbca-74a7-4bc4-bc57-4ad6b7ab81bf",
+		"name": "MiniStrava",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45019811",
+		"_collection_link": "https://johndoe-3442405.postman.co/workspace/John-Doe's-Workspace~333ef146-65db-4972-86b3-de523ff0b8de/collection/45019811-8ff0cbca-74a7-4bc4-bc57-4ad6b7ab81bf?action=share&source=collection_link&creator=45019811"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"abcd@gmail.com\",\r\n    \"Password\": \"Abcd!123456\",\r\n    \"ConfirmPassword\": \"Abcd!123456\",\r\n    \"FirstName\": \"B\",\r\n    \"LastName\": \"D\",\r\n    \"BirthDate\": \"2000-12-30\",\r\n    \"Gender\": \"Male\",\r\n    \"HeightCm\": 190,\r\n    \"WeightKg\": 90,\r\n    \"AvatarUrl\": \"\",\r\n    \"PreferredLanguage\": \"pl\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Mobile",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"abcd@gmail.com\",\r\n    \"Password\": \"Abcd!123456\",\r\n    \"ConfirmPassword\": \"Abcd!123456\",\r\n    \"FirstName\": \"B\",\r\n    \"LastName\": \"D\",\r\n    \"BirthDate\": \"2000-12-30\",\r\n    \"Gender\": \"Male\",\r\n    \"HeightCm\": 190,\r\n    \"WeightKg\": 90,\r\n    \"AvatarUrl\": \"\",\r\n    \"PreferredLanguage\": \"pl\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/test2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Authorized",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNkQGdtYWlsLmNvbSIsImp0aSI6IjY3NTM2OGE1LTI4ZjktNGVkMy1iNjk3LTg4MzdlZmRlMjJiMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhYmNkQGdtYWlsLmNvbSIsImV4cCI6MTc2ODMxNzQxNCwiaXNzIjoiTXlBcGkiLCJhdWQiOiJNeUFwaVVzZXJzIn0.lbl9btNQVTeqHdX1hqTMsRcuP3mMdNdAf29wOHhJ3Ow",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/test1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Login\": \"abcd@gmail.com\",\r\n    \"Password\": \"Abcd!123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Logged Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNkQGdtYWlsLmNvbSIsImp0aSI6IjYyZTgwNDY0LWE3NWQtNGQ0MS1hMDNkLTBhNTg1NmQ2ODJlNCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhYmNkQGdtYWlsLmNvbSIsImV4cCI6MTc3MDY1MzUzOSwiaXNzIjoiTXlBcGkiLCJhdWQiOiJNeUFwaVVzZXJzIn0.swFxW1Z1AUFMwOS2EQprHP1iaVOBmrruSeXSaPwt4BM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Logged Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNkQGdtYWlsLmNvbSIsImp0aSI6IjYyZTgwNDY0LWE3NWQtNGQ0MS1hMDNkLTBhNTg1NmQ2ODJlNCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhYmNkQGdtYWlsLmNvbSIsImV4cCI6MTc3MDY1MzUzOSwiaXNzIjoiTXlBcGkiLCJhdWQiOiJNeUFwaVVzZXJzIn0.swFxW1Z1AUFMwOS2EQprHP1iaVOBmrruSeXSaPwt4BM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"rgdogdrjno\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Activity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNkQGdtYWlsLmNvbSIsImp0aSI6IjYyZTgwNDY0LWE3NWQtNGQ0MS1hMDNkLTBhNTg1NmQ2ODJlNCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhYmNkQGdtYWlsLmNvbSIsImV4cCI6MTc3MDY1MzUzOSwiaXNzIjoiTXlBcGkiLCJhdWQiOiJNeUFwaVVzZXJzIn0.swFxW1Z1AUFMwOS2EQprHP1iaVOBmrruSeXSaPwt4BM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Run2\",\r\n    \"ActivityType\": 0, \r\n    \"StartTime\": \"2026-02-09T14:23:45.123+01:00\",\r\n    \"EndTime\": \"2026-02-09T15:23:45.123+01:00\",\r\n    \"DistanceMeters\": 100.0,\r\n    \"AveragePaceSecPerKm\": 5,\r\n    \"AverageSpeedMps\": 12.5,\r\n    \"Notes\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Activities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNkQGdtYWlsLmNvbSIsImp0aSI6IjYyZTgwNDY0LWE3NWQtNGQ0MS1hMDNkLTBhNTg1NmQ2ODJlNCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhYmNkQGdtYWlsLmNvbSIsImV4cCI6MTc3MDY1MzUzOSwiaXNzIjoiTXlBcGkiLCJhdWQiOiJNeUFwaVVzZXJzIn0.swFxW1Z1AUFMwOS2EQprHP1iaVOBmrruSeXSaPwt4BM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
