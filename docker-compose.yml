@@ -1,31 +1,31 @@
-version: "3.8"
-
 services:
   db:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: mini_strava_db
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "${SA_PASSWORD:-Haslo!12345678}"
-    ports:
-      - "1433:1433"
+      SA_PASSWORD: "${SA_PASSWORD}"
     volumes:
       - sqlserverdata:/var/opt/mssql
     restart: always
 
   api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: mini_strava_api
+    build: .
     depends_on:
       - db
     environment:
       ASPNETCORE_URLS: "http://+:8080"
-      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=${SA_PASSWORD:-Haslo!12345678};Trusted_Connection=False;Encrypt=False;TrustServerCertificate=True;"
-    ports:
-      - "5000:8080"
+      ConnectionStrings__DefaultConnection: "Server=db;Database=MiniStrava;User Id=sa;Password=${SA_PASSWORD};Trusted_Connection=False;Encrypt=False;TrustServerCertificate=True;"
+      Jwt__Key: "${JWT_KEY}"
+      Jwt__Issuer: "${JWT_ISSUER:-MyApi}"
+      Jwt__Audience: "${JWT_AUDIENCE:-MyApiUsers}"
     restart: on-failure
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - api
+    restart: unless-stopped
 
 volumes:
   sqlserverdata:
